@@ -22,16 +22,7 @@ int main(void)
 		putchar(c);
 		c++;
 	}
-	c = 36;
-	while (c > 9)
-	{
-		if (c == 36 || c == 10)
-		{
-			putchar(c);
-		}
-		c--;
-
-	}
+	putchar(10);
 
 	return (0);
 }
