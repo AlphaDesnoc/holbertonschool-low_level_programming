@@ -2,7 +2,7 @@
 
 /**
 * jack_bauer - Entry point
-* 
+*
 * Return: void
 */
 
@@ -16,7 +16,6 @@ void jack_bauer(void)
 	while (i < 24)
 	{
 		j = 0;
-		
 		while (j < 60)
 		{
 			_putchar('0' + (i / 10));
