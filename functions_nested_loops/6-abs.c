@@ -1,12 +1,19 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
-* main - Entry point
-* 
-* Return: Always 0 (Success)
+* _abs - Entry point
+* @c: c is integer
+* Return: absolute of c
 */
 
-int main(void)
+int _abs(int c)
 {
-	return (0);
+	if (c < 0)
+	{
+		return (-c);
+	}
+	else
+	{
+		return (c);
+	}
 }
