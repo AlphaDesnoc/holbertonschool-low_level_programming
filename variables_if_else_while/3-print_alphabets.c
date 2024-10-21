@@ -13,14 +13,25 @@ int main(void)
 	while (c < 123)
 	{
 		putchar(c);
+		c++;
 	}
 
 	c = 65;
 	while (c < 91)
 	{
 		putchar(c);
+		c++;
 	}
-	putchar(36);
+	c = 36;
+	while (c > 9)
+	{
+		if (c == 36 || c == 10)
+		{
+			putchar(c);
+		}
+		c--;
+
+	}
 
 	return (0);
 }
