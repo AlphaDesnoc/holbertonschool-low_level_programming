@@ -19,6 +19,7 @@ int main(void)
 	while (c < 103)
 	{
 		putchar(c);
+		c++;
 	}
 	putchar(10);
 
