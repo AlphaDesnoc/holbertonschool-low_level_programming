@@ -10,10 +10,9 @@ void print_alphabet(void)
 {
 	char c = 97;
 
-	while (c < 123)
+	for (; c < 123; c++)
 	{
 		_putchar(c);
-		c++;
 	}
-	_putchar(10);
+	_putchar(c);
 }
