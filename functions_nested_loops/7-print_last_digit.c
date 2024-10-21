@@ -1,12 +1,12 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
-* main - Entry point
-* 
-* Return: Always 0 (Success)
+* print_last_digit - Entry point
+* @c: is int
+* Return: last digit
 */
 
-int main(void)
+int print_last_digit(int c)
 {
-	return (0);
+	return (c % 10);
 }
