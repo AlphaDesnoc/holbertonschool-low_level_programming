@@ -8,7 +8,7 @@
 
 int main(void)
 {
-	int c = 97;
+	char c = 97;
 
 	while (c < 123)
 	{
