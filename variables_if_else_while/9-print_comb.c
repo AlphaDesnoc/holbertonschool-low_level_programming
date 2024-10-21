@@ -13,8 +13,11 @@ int main(void)
 	while (c < 10)
 	{
 		putchar('0' + c);
-		putchar(44);
-		putcahr(32);
+		if (c != 9)
+		{
+			putchar(44);
+			putchar(32);
+		}
 		c++;
 	}
 	putchar(10);
