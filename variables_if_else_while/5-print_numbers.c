@@ -10,11 +10,12 @@ int main(void)
 {
 	char c = 0;
 
-	while (c < 11)
+	while (c < 10)
 	{
-		putchar(c);
+		printf("%d", c);
 		c++;
 	}
+	putchar(10);
 
 	return (0);
 }
