@@ -1,12 +1,26 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
-* main - Entry point
-* 
-* Return: Always 0 (Success)
+* times_table - Entry point
+*
+* Return: void
 */
 
-int main(void)
+void times_table(void)
 {
-	return (0);
+	char i;
+	char j;
+	char k;
+
+	for (i = 0; i < 10; i++)
+	{
+		for (j = 0; j < 10; j++)
+		{
+			k = i * j;
+
+			_putchar(k);
+			_putchar(44);
+			_putchar(32);
+		}
+	}	
 }
