@@ -1,12 +1,21 @@
 #include <stdio.h>
 
 /**
-* main - Entry point
-* 
+* print_to_98 - Entry point
+*
 * Return: Always 0 (Success)
 */
 
-int main(void)
+void print_to_98(int n)
 {
-	return (0);
+	while (n <= 98)
+	{
+		_putchar('0' + n);
+		if (n != 98)
+		{
+			_putchar(',');
+			_putchar(' ');
+		}
+		n++;
+	}
 }
