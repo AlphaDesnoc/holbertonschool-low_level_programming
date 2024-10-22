@@ -1,12 +1,12 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
-* main - Entry point
-* 
-* Return: Always 0 (Success)
+* add - Entry point
+*
+* Return: The result of the add of two integer
 */
 
-int main(void)
+int add(int a, int b)
 {
-	return (0);
+	return (a + b);
 }
