@@ -1,12 +1,32 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
-* main - Entry point
-* 
-* Return: Always 0 (Success)
+* print_diagonal - Entry point
+* @n : p
+* Return: void
 */
 
-int main(void)
+void print_diagonal(int n)
 {
-	return (0);
+	int i = 0;
+	int j = 0;
+
+	if (i <= 0)
+	{
+		_putchar('\n');
+	}
+	else
+	{
+		while (i < n)
+		{
+			while (j < n)
+			{
+				_putchar(' ');
+				j++;
+			}
+			_putchar('\\');
+			_putchar('\n');
+			i++;
+		}
+	}
 }
