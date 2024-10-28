@@ -1,12 +1,27 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
-* main - Entry point
+* print_line - Entry point
 * 
 * Return: Always 0 (Success)
 */
 
-int main(void)
+void print_line(int n)
 {
-	return (0);
+
+	int i;
+
+	if (n <= 0)
+	{
+		_putchar('\n');
+	}
+
+	else
+	{
+		while (i < n)
+		{
+			_putchar(95);
+			i++;
+		}
+	}
 }
