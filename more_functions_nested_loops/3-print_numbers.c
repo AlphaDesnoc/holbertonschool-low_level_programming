@@ -1,12 +1,17 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
-* main - Entry point
+* print_numbers - Entry point
 * 
 * Return: Always 0 (Success)
 */
 
-int main(void)
+void print_numbers(void)
 {
-	return (0);
+	int i;
+
+	for (i = 0; i < 10; i++)
+	{
+		_putchar(i);
+	}
 }
