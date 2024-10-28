@@ -8,5 +8,10 @@
 
 void _puts(char *str)
 {
-	fwrite(1, *str, _strlen(str));
+	int i;
+
+	for (i = 0; i < _strlen(*str); i++)
+	{
+		_putchar(*str[i]);
+	}
 }
