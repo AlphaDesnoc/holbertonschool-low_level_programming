@@ -1,12 +1,20 @@
 #include "main.h"
 
 /**
-* main - Entry point
-* 
-* Return: Always 0 (Success)
+* print_rev - Entry point
+* @s: p
+* Return: void
 */
 
-int main(void)
+void print_rev(char *s)
 {
-	return (0);
+	int len = 0;
+
+	while (s[len])
+		len++;
+
+	while (len)
+		_putchar(s[--len]);
+
+	_putchar('\n');
 }
