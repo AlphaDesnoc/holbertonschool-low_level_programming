@@ -1,12 +1,18 @@
 #include "main.h"
 
 /**
-* main - Entry point
-* 
-* Return: Always 0 (Success)
+* rev_string - Entry point
+* @s: p
+* Return: void
 */
 
-int main(void)
+void rev_string(char *s)
 {
-	return (0);
+	int len = _strlen(s);
+
+	while (len != 0)
+	{
+		_putchar(s[len]);
+		len--;
+	}
 }
