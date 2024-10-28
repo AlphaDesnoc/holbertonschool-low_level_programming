@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
-* main - Entry point
-* 
+* puts2 - Entry point
+* @str: p
 * Return: Always 0 (Success)
 */
 
