@@ -2,7 +2,7 @@
 
 /**
 * _isupper - function
-*
+* @c: parameter
 * Return: 0 or 1
 */
 
