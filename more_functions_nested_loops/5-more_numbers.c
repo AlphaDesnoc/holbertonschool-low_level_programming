@@ -1,12 +1,23 @@
 #include <stdio.h>
 
 /**
-* main - Entry point
-* 
-* Return: Always 0 (Success)
+* more_numbers - Entry point
+*
+* Return: void
 */
 
-int main(void)
+void more_numbers(void)
 {
-	return (0);
+	int i;
+	int j;
+
+	for (i = 0; i < 10; i++)
+	{
+		for (j = 0; j < 15; j++)
+		{
+			_putchar('0' + j);
+		}
+		_putchar('\n');
+	}
+	_putchar('\n');
 }
