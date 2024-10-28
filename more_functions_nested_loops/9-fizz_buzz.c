@@ -22,9 +22,9 @@ int main(void)
 		}
 		else if (i % 5 == 0)
 		{
-			printf("Fizz ");
+			printf("Buzz ");
 		}
-		else if (i % (3*5) == 0)
+		else if (i % (3 * 5) == 0)
 		{
 			printf("FizzBuzz ");
 		}
