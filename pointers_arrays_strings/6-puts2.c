@@ -6,7 +6,14 @@
 * Return: Always 0 (Success)
 */
 
-int main(void)
+void puts2(char *str)
 {
-	return (0);
+	int i;
+
+	for (i = 0; str[i] != '\0'; i++)
+	{
+		if (str[i] % 2 == 0)
+			_putchar('0' + str[i]);
+	}
+	_putchar('\n');
 }
