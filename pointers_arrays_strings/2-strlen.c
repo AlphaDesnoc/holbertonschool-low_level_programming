@@ -1,12 +1,19 @@
 #include "main.h"
 
 /**
-* main - Entry point
-* 
-* Return: Always 0 (Success)
+* _strlen - Entry point
+* @s: p
+* Return: string size
 */
 
-int main(void)
+int _strlen(char *s)
 {
-	return (0);
+	int length = 0;
+
+	while (input[length] != '\0')
+	{
+		length++;
+	}
+
+	return (length);
 }
