@@ -1,12 +1,29 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
-* main - Entry point
-* 
-* Return: Always 0 (Success)
+* print_square - Entry point
+* @size: p
+* Return: void
 */
 
-int main(void)
+void print_square(int size)
 {
-	return (0);
+
+	int row;
+	int column;
+
+	if (size <= 0)
+	{
+		_putchar('\n');
+	}
+
+	for (row = 0; row < size; row++)
+	{
+		for (column = 0; column < size; column++)
+		{
+			_putchar('#');
+		}
+		_putchar('#');
+	}
+
 }
