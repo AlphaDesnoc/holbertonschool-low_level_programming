@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
-* main - Entry point
-* 
-* Return: Always 0 (Success)
+* _puts - Entry point
+* @str: p
+* Return: void
 */
 
-int main(void)
+void _puts(char *str)
 {
-	return (0);
+	write(1, *str, _strlen(str));
 }
