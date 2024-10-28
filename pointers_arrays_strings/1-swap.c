@@ -1,12 +1,15 @@
 #include "main.h"
 
 /**
-* main - Entry point
-* 
-* Return: Always 0 (Success)
+* swap_int - Entry point
+* @a: p
+* @b: p
+* Return: void
 */
 
-int main(void)
+void swap_int(int *a, int *b);
 {
-	return (0);
+	int temp = *a;
+	*a = *b;
+	*b = temp;
 }
