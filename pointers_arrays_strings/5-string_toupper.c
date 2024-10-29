@@ -1,12 +1,20 @@
 #include "main.h"
 
 /**
-* main - Entry point
-* 
-* Return: Always 0 (Success)
+* string_toupper - Entry point
+* @s: p
+* Return: char
 */
 
-int main(void)
+char *string_toupper(char *s);
 {
-	return (0);
+	int i;
+
+	for (i = 0; s[i] != '\0'; i++)
+	{
+		if (s[i] >= 'a' && s[i] <= 'z')
+			s[i] = s[i] - 32;
+	}
+
+	return (s);
 }
