@@ -1,12 +1,22 @@
 #include "main.h"
 
 /**
-* main - Entry point
-* 
-* Return: Always 0 (Success)
+* _strcpy - Entry point
+* @dest: p
+* @src: p
+* Return: char
 */
 
-int main(void)
+char *_strcpy(char *dest, char *src)
 {
-	return (0);
+	int src_len = 1;
+	int i;
+	
+	while (src_len != '\0')
+		src_len++
+
+	for (i = 0; i < src_len; i++)
+	{
+		dest[i] = src[i];
+	}
 }
