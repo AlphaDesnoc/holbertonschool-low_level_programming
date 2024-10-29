@@ -1,12 +1,24 @@
 #include "main.h"
 
 /**
-* main - Entry point
-* 
-* Return: Always 0 (Success)
+* print_array - Entry point
+* @a: p
+* @n: int
+* Return: void
 */
 
-int main(void)
+void print_array(int *a, int n)
 {
-	return (0);
+	char i;
+
+	for (i = 0; i < n; i++)
+	{
+		_putchar(a[i]);
+
+		if (i != n)
+		{
+			_putchar(',');
+			_putchar(' ');
+		}
+	}
 }
