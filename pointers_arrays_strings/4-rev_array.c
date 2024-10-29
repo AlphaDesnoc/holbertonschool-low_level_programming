@@ -1,12 +1,24 @@
 #include "main.h"
 
 /**
-* main - Entry point
-* 
-* Return: Always 0 (Success)
+* reverse_array - Entry point
+* @a: p
+* @n: int
+* Return: void
 */
 
-int main(void)
+void reverse_array(int *a, int n)
 {
-	return (0);
+	int i;
+	int j;
+	int temp;
+
+	j = n - 1;
+
+	for (i = 0; i < n / 2; i++)
+	{
+		temp = a[i];
+		a[i] = a[j];
+		a[--j] = temp;
+	}
 }
