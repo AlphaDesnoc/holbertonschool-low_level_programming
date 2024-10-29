@@ -38,7 +38,7 @@ void print_array(int *a, int n)
 	{
 		printnumber(a[i]);
 
-		if (i < n)
+		if (i != (n - 1))
 		{
 			_putchar(',');
 			_putchar(' ');
