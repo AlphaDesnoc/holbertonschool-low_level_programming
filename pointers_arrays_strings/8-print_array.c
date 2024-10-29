@@ -1,6 +1,29 @@
 #include "main.h"
 
 /**
+ * printnumber - print number with putchar
+ * @n: int
+ * Return; void
+ */
+void printnumber(int n)
+{
+
+	if (n < 0)
+	{
+		_putchar('-');
+		n = -n;
+	}
+
+	if (n == 0)
+		putchar('0');
+
+	if (n / 10)
+		printnumber(n / 10);
+
+	_putchar(n % 10 + '0');
+}
+
+/**
 * print_array - Entry point
 * @a: p
 * @n: int
@@ -13,7 +36,7 @@ void print_array(int *a, int n)
 
 	for (i = 0; i < n; i++)
 	{
-		_putchar(a[i]);
+		printnumber(a[i]);
 
 		if (i != n)
 		{
