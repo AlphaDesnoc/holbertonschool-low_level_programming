@@ -1,12 +1,31 @@
 #include "main.h"
 
 /**
-* main - Entry point
-* 
-* Return: Always 0 (Success)
+* cap_string - Entry point
+* @s: p
+* Return: char
 */
 
-int main(void)
+char *cap_string(char *s)
 {
-	return (0);
+	int i;
+	int j;
+
+	char spe_char[13] = {' ', '\t', '\n', ',', ';', '.',
+	       	'!', '?', '"', '(', ')', '{', '}'};
+
+	for (i = 0; s[i] != '\0', i++)
+	{
+		if (i == 0 && s[i] >= 'a' && s[i] <= 'z')
+			s[i] -= 32;
+
+		for (j = 0; j < 13; j++)
+		{
+			if (s[i] == spe_char[j])
+			{
+				if (s[i + 1] >= 'a' && s[i + 1] <= 'z')
+					s[i + 1] -= 32;
+			}
+		}
+	}
 }
