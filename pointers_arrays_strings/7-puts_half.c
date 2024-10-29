@@ -1,12 +1,33 @@
 #include "main.h"
 
 /**
-* main - Entry point
-* 
-* Return: Always 0 (Success)
+* puts_half - Entry point
+* @str: p
+* Return: void
 */
 
-int main(void)
+void puts_half(char *str)
 {
-	return (0);
+	int i = 0;
+	int j;
+	int n = 0;
+
+	while (str[j] != '\0')
+		i++;
+
+
+	if (j % 2 == 0)
+	{
+		n = (i / 2);
+	}
+	else
+	{
+		n = ((i - 1) / 2);
+	}
+
+	for (j = n; j < i; j++)
+	{
+		_putchar(str[j]);
+	}
+	_putchar('\n');
 }
