@@ -1,12 +1,24 @@
 #include "main.h"
 
 /**
-* main - Entry point
-* 
+* _strpbrk - Entry point
+* @s: ptr
+* @accept: ptr
 * Return: Always 0 (Success)
 */
-
-int main(void)
+char *_strpbrk(char *s, char *accept)
 {
+	char *a;
+
+	while (*s)
+	{
+		for (a = accept; *a; a++)
+		{
+			if (*s == *a)
+				return (s);
+		}
+		s++;
+	}
+
 	return (0);
 }
