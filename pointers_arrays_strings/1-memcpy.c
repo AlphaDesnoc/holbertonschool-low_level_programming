@@ -1,12 +1,16 @@
 #include "main.h"
 
 /**
-* main - Entry point
+*  - Entry point
 * 
 * Return: Always 0 (Success)
 */
 
-int main(void)
+char *_memcpy(char *dest, char *src, unsigned int n)
 {
-	return (0);
+
+	while (n > 0 && n--)
+		dest[n] = src[n];
+
+	return (dest);
 }
