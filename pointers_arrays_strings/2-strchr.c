@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
-* main - Entry point
+* _strchr - Entry point
 * 
 * Return: Always 0 (Success)
 */
 
-int main(void)
+char *_strchr(char *s, char c)
 {
 	return (0);
 }

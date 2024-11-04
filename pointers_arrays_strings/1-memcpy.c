@@ -1,8 +1,10 @@
 #include "main.h"
 
 /**
-*  - Entry point
-* 
+* _memcpy - Entry point
+* @dest: dest
+* @src: src
+* @n: size
 * Return: Always 0 (Success)
 */
 
