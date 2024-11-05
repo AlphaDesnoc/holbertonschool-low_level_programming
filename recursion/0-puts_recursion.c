@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
-* main - Entry point
-* 
+* _puts_recursion - Entry point
+* @s: ptr
 * Return: Always 0 (Success)
 */
 

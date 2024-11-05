@@ -1,12 +1,18 @@
 #include "main.h"
 
 /**
-* main - Entry point
-* 
+* factorial - Entry point
+* @n: int
 * Return: Always 0 (Success)
 */
 
-int main(void)
+int factorial(int n)
 {
-	return (0);
+	if (n < 0)
+		return (-1);
+
+	if (n == 0)
+		return (1);
+
+	return (n * factorial(n - 1));
 }
