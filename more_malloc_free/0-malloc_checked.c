@@ -1,12 +1,20 @@
 #include "main.h"
 
 /**
-* main - Entry point
-* 
-* Return: Always 0 (Success)
-*/
-
-int main(void)
+ * malloc_checked - Entry point
+ * @b: int
+ * Return: Always 0 (Success)
+ */
+void *malloc_checked(unsigned int b)
 {
-	return (0);
+	void *ptr;
+
+	if (b == 0)
+		exit(98);
+
+	ptr = malloc(b);
+	if (ptr == NULL)
+		exit(98);
+
+	return (ptr);
 }
