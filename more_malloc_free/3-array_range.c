@@ -1,12 +1,28 @@
 #include "main.h"
 
 /**
-* main - Entry point
-* 
-* Return: Always 0 (Success)
-*/
-
-int main(void)
+ * array_range - Entry point
+ * @min: int
+ * @max: int
+ * Return: Always 0 (Success)
+ */
+int *array_range(int min, int max)
 {
-	return (0);
+	int *array;
+	int size;
+	int i;
+
+	if (min > max)
+		return (NULL);
+
+	size = max - min + 1;
+
+	array = malloc(sizeof(int) * size);
+	if (array == NULL)
+		return (NULL);
+
+	for (i = 0; i < size; i++)
+		array[i] = min + i;
+
+	return (array);
 }
