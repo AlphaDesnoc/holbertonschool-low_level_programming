@@ -1,12 +1,17 @@
 #include "main.h"
+#include <stdlib.h>
 
 /**
-* main - Entry point
-* 
-* Return: Always 0 (Success)
+* free_dog - Entry point
+* @d: ptr
 */
 
-int main(void)
+void free_dog(dog_t *d)
 {
-	return (0);
+	if (d)
+	{
+		free(d->name);
+		free(d->owner);
+		free(d);
+	}
 }
