@@ -3,7 +3,7 @@
 
 /**
 * print_dog - Entry point
-* @dog: ptr
+* @d: ptr
 */
 
 void print_dog(struct dog *d)
