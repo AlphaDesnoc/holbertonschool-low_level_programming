@@ -1,14 +1,14 @@
-#include "main.h"
+#include "dog.h"
 
 /**
- * create_dog - Entry point
+ * new_dog - Entry point
  * @name: ptr
  * @owner: ptr
  * @age: float
  * Return: Always 0 (Success)
  */
 
-dog_t *create_dog(char *name, float age, char *owner)
+dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *ptr_dog;
 	int size_name = 0;
