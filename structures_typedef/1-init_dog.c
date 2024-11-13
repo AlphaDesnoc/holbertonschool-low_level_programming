@@ -1,12 +1,19 @@
 #include "main.h"
 
 /**
-* main - Entry point
-* 
-* Return: Always 0 (Success)
+* init_dog - Entry point
+* @d: ptr
+* @name: ptr
+* @age: float
+* @owner: ptr
 */
 
-int main(void)
+void init_dog(struct dog *d, char *name, float age, char *owner)
 {
-	return (0);
+	if (d)
+	{
+		d.name = name;
+		d.age = age;
+		d.owner = owner;
+	}
 }
