@@ -1,12 +1,12 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
-* main - Entry point
-* 
-* Return: Always 0 (Success)
+* print_dog - Entry point
+* @dog: ptr
 */
 
-int main(void)
+void print_dog(struct dog *d)
 {
-	return (0);
+	printf("Name: %d\nAge: %d\nOwner: %d", d.name, d.age, d.owner);
 }
