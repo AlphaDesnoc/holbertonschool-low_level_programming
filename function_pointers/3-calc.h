@@ -1,13 +1,12 @@
-#ifndef CALC_H
-#define CALC_H
+#ifndef calc_h
+#define calc_h
 
 /**
- * struct op - the structure for associate operator and function
+ * struct op - Struct op.
  *
- * @op: struc
- * @f: function
+ * @op: The operator.MLP.
+ * @f: The function associated.
  */
-
 typedef struct op
 {
 	char *op;
@@ -19,7 +18,6 @@ int op_sub(int a, int b);
 int op_mul(int a, int b);
 int op_div(int a, int b);
 int op_mod(int a, int b);
-
 int (*get_op_func(char *s))(int, int);
 
 #endif
