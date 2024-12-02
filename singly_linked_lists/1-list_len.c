@@ -7,10 +7,13 @@
  */
 size_t list_len(const list_t *h)
 {
-	int i;
+	size_t i = 0;
 
-	for (i = 0; h; i++)
+	while (h)
+	{
+		i++;
 		h = h->next;
+	}
 
 	return (i);
 }
