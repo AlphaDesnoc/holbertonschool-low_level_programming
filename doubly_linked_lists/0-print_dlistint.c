@@ -2,9 +2,9 @@
 #include <stdio.h>
 
 /**
- * print_dlistint - prints all elements
- * @h: head
- * Return: number
+ * print_dlistint - prints all elements of a list.
+ * @h: head of the list.
+ * Return: number of node.
  */
 size_t print_dlistint(const dlistint_t *h)
 {
